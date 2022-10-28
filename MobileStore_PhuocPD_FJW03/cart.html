@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header-main">
+                <div class="header-main-title">
+                    <h1 class="header-main-heading">Cart</h1>
+                    <p class="header-main-title">All the selected products in your cart</p>
+                </div>
+            </div>
+        </header>
+        <section class="containe">
+            <div class="container-main">
+                <div class="container-main-cart-btn">
+                    <button type="button" class="btn btn-danger btn-cart js-btn-cart-clear ti-close">
+                        
+                        Clear cart
+                    </button>
+                    <button type="button" class="ti-shopping-cart btn btn-success btn-cart">
+                       
+                        
+                        Check out
+                    </button>
+                </div>
+                <div class="container-main-content">
+                    <ul class="container-main-content-list bold">
+                        <li class="container-main-content-item">Product</li>
+                        <li class="container-main-content-item">quantity</li>
+                        <li class="container-main-content-item">Unit price</li>
+                        <li class="container-main-content-item">price</li>
+                        <li class="container-main-content-item">action</li>
+                    </ul>
+                    <div class="list-item">
+                       
+                        
+                    </div>
+                    <ul class="container-main-content-list">
+                        <li class="container-main-content-item total bold">Grand total</li>
+                        <li class="container-main-content-item bold price-total">0</li>
+                        
+                    </ul>
+                    <button type="button" class="ti-arrow-circle-left btn btn-success btn-coundtinue"> Countinue Shopping</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./js/cart.js"></script>
+</html>

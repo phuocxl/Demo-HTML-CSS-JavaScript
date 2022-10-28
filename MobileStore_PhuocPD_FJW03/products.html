@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="./cart.html">
+    <link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>Product</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header-main">
+                <div class="header-heading">
+                    <h1 class="header-heading-title">
+                        Products
+                    </h1>
+                    <p class="header-heading-desc">Add products</p>
+                </div>
+                <button type="button" class="btn btn-danger btn-to-login js-btn">Logout</button>
+            </div>
+        </header>
+        <section class="containe">
+            <div class="container-main">
+                <div class="container-main-heading">
+                    <h3 class="heading-title">Add new product</h3>
+                </div>
+                <div class="container-main-product">
+                    <form action="" id="form">
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">Product Name</label>
+                            <input id="fullname" name="fullname" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Unitprice" class="form-label">Unit price</label>
+                            <input id="Unitprice" name="Unitprice" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Unitinstock" class="form-label">Unit in stock</label>
+                            <input id="Unitinstock" name="Unitinstock" type="number" min="1" value="0" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea rows="3" cols="31" name="comment" class="textcmt"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="manufacturer" class="form-label">manufacturer</label>
+                            <input id="manufacturer" name="manufacturer" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="category" class="form-label">category</label>
+                            <input id="category" name="fullname" type="text" class="form-control">
+                        </div>
+                        <div class="form-group form-group-radio">
+                            <label for="condition" class="form-label form-group-radio-label">Condition</label>
+                            <input id="condition" name="ondition" type="radio" class="form-control check-radio">New
+                            <input id="condition" name="ondition" type="radio" class="form-control check-radio">old
+                            <input id="condition" name="ondition" type="radio" class="form-control check-radio">Refurbished
+                        </div>
+                        <div class="form-group">
+                            <label for="manufacturer" class="form-label">Product Image File</label>
+                            <input id="file" name="manufacturer" type="file" class="form-control input-file">
+                        </div>
+                        <div class="form-group">
+                            <label for="manufacturer" class="form-label"></label>
+                            <button type="submit" class="btn btn-primary btn-add">Add product</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
+<script src="./js/products.js"></script>
+</html>

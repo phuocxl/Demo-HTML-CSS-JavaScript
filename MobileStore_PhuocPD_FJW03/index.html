@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        
+    <title>Document</title>
+</head>
+<body>
+    <ul class="ul">
+        <li class="li">first</li>
+        <li class="li">second item</li>
+        <li class="li">third item</li>
+    </ul>
+    <form action="" id="form">
+        <input id="input" type="text">
+        <button class="submit">Extract Text</button>
+    </form>
+    <p class="p"></p>
+    <script>
+       const li = document.querySelectorAll(".li")
+       const input = document.querySelector("#input")
+       const p = document.querySelector(".p")
+       const form = document.querySelector("#form")
+       form.addEventListener("submit",(e)=> {
+        if(e.preventDefault) {
+            e.preventDefault()
+        }
+        let count = 0
+        let index = li[0]
+        let text = []
+        for(let i = 0; i <li.length; i++) {
+            text.push(li[i].innerText)
+            
+        }
+        for(let j = 0; j<text.length; j++) {
+            if(text[j].includes(input.value.trim())) {
+                index = li[j]
+                index.style.fontWeight="bold"
+               count ++ 
+            } else {
+                index =li[j]
+                index.style.fontWeight=""
+            }
+            p.innerText = `${count} matches found.`
+        }
+       })
+    </script>
+</body>
+</html>

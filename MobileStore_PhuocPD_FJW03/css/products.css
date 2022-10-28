@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 190px;
+    background-color: #eeeeee;
+}
+
+.header-main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-heading {
+    margin-top: 60px;
+}
+
+.btn-to-login {
+    padding: 2px 4px;
+}
+
+.containe {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-main-heading {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.heading-title {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.form-group {
+    display: flex;
+    gap: 0 40px;
+    width: 450px;
+}
+
+.form-label {
+    width: 200px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.form-control {
+    width: 250px;
+    outline: none;
+}
+
+.form-group-radio {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.form-group-radio-label {
+    flex-shrink: 0;
+}
+
+.check-radio {
+    width: 15px;
+    margin-left: auto;
+    outline: none;
+}
+
+.input-file {
+    border: none;
+}
+
+.btn-add {
+    padding: 4px 6px;
+}
